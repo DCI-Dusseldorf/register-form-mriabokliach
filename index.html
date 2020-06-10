@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main">
+        <div class="pictureField">
+            <img class="picture" src="booking.jpg" alt="Happy People">
+        </div>
+        <div class="blackField">
+            <h2>Booking place for your dinner!</h2>
+            <form class="form">
+                <div class="input">
+                    <input type="text" name="name" placeholder="Your name">
+                </div>
+                <div class="input">
+                    <input type="tel" name="phone" placeholder="Your phone number">
+                </div>
+                <div class="input">
+                    <!-- <label for="timeList">Time</label>
+                    <input name="time" list="timeList">
+                    <datalist id="timeList">
+                        <option value="6:00 PM">
+                        <option value="7:00 PM">
+                    </datalist> -->
+                    <select name="time" id="timeList">
+                        <option class="chooseOption" selected value="">--Choose a time slot--</option>
+                        <option value="6:00_PM">6:00 PM</option>
+                        <option value="7:00_PM">7:00 PM</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <select name="food" id="foodList">
+                        <option class="chooseOption" selected value="">--Choose a food option--</option>
+                        <option value="fish">Seasonal steamed fish</option>
+                        <option value="mushrooms">Assorted mushrooms</option>
+                    </select>
+                </div>
+                <div class="numPeople">
+                    <legend>Select Your Dining Space</legend>
+                    <div class="radioGroup">
+                        <input type="radio" name="radioGroup" id="2-people" value="2" checked>
+                        <label for="2-people">2</label>
+                        <input type="radio" name="radioGroup" id="4-people" value="4">
+                        <label for="4-people">4</label>
+                        <input type="radio" name="radioGroup" id="6-people" value="6">
+                        <label for="6-people">6</label>
+                        <input type="radio" name="radioGroup" id="8-people" value="8">
+                        <label for="8-people">8</label>
+                        <input type="radio" name="radioGroup" id="10-people" value="10">
+                        <label for="10-people">10</label>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" class="submitButton" value="Book now">
+                    <a href="#" class="verifyLink">Verify your booking info from your phone</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffd9b0;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1150px;
+    height: 710px;
+    margin: 8% auto;
+}
+
+.pictureField {
+    width: 58%;
+}
+
+.picture {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.blackField {
+    background-color: #111111;
+    border-radius: 0 10px 10px 0;
+    padding: 5em;
+}
+
+.blackField h2 {
+    font-size: 1.38em;
+    margin-bottom: 2em;
+}
+
+.input input, select {
+    width: 100%;
+    height: 3em;
+    margin: 1em 0;
+    background-color: #111111;
+    color: #837e76;
+}
+
+/* .input select option:checked {
+    background-color: #E8F0FE;
+} */
+
+.radioGroup {
+    margin-top: 1em;
+}
+
+.radioGroup label {
+    margin-right: 2em;
+}
+
+.numPeople, .submit {
+    margin: 3em 0;
+}
+
+.submitButton {
+    width: 150px;
+    height: 50px;
+    background-color: #edb77d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+.submitButton:hover {
+    background-color: #e79e50;
+}
+
+.verifyLink {
+    display: block;
+    color: #edb77d;
+    text-decoration: none;
+    font-size: .8em;
+    margin-top: 1em;
+}
+
+.verifyLink:hover {
+    text-decoration: underline;
+}
